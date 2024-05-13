@@ -23,9 +23,6 @@ const links = [
 
 export default function NavLinks() {
   const pathName=usePathname()
-  const filteredLinks=links.map((link)=>link.href)
-const isActive=filteredLinks.includes(pathName)
-console.log(window.location.pathname)
   return (
     <>
       {links.map((link) => {
